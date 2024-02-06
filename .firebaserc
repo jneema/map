@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "first-d59a5": {
+      "hosting": {
+        "expertProject": [
+          "first-d59a5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "first-d59a5"
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.component.css">
+</head>
+
+<body>
+<!-- Assuming this is your login.component.html file -->
+<h2>Login</h2>
+<form>
+    <div class="mb-3">
+        <label for="email">Email:</label>
+        <input class="form-control" type="email" name="email" id="email" [(ngModel)]="email" required>
+    </div>
+    <div class="mb-3">
+        <label for="password">Password:</label>
+        <div class="input-group">
+            <input class="form-control" type="{{ showPassword ? 'text' : 'password' }}" name="password" id="password" [(ngModel)]="password" required>
+            <span class="input-group-text">
+                <input type="checkbox" [(ngModel)]="showPassword" name="checkbox">
+            </span>
+        </div>
+    </div>
+    <button class="mb-3 btn btn-primary" (click)="login()">Login</button>
+    <div class="mb-3">
+        <a routerLink="/forgot-password">Forgot Password?</a>
+    </div>
+    <a (click)="signInWithGoogle()" class="google-sign-in">
+        <div class="card shadow text-center">
+            <div class="card-body">
+                Sign In With Google
+            </div>
+        </div>
+    </a>
+</form>
+
+</body>
+</html>

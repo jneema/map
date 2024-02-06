@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="dashboard.component.css">
+</head>
+<body>
+<!-- Assuming this is your user information form -->
+<div class="d-flex align-items-center justify-content-center vh-100">
+  <div class="form-container mb-3">
+      <h2>User Information Form</h2>
+      <form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+              <div class="mb-3">
+                  <label for="name-input">Name:</label>
+                  <input class="form-control" id="first-name-input" type="text" [(ngModel)]="userName" [ngModelOptions]="{standalone: true}" required>
+              </div>
+
+
+
+          <div class="mb-3">
+              <label for="photo-input">
+                Photo:</label>
+              <input class="form-control" id="photo-input" type="file" (change)="onPhotoChange($event)" accept="image/*">
+          </div>
+
+          <div class="row mb-3">
+              <div class="col-md-6">
+                  <label for="home-location-input">Home Location:</label>
+                  <input class="form-control" id="home-location-input" type="text" required>
+              </div>
+
+              <div class="col-md-6">
+                  <label for="work-location-input">Work Location:</label>
+                  <input class="form-control" id="work-location-input" type="text"  required>
+              </div>
+          </div>
+
+          <button class="mb-3 btn btn-primary" type="submit">Submit</button>
+      </form>
+
+
+  </div>
+</div>
+
+</body>
+</html>

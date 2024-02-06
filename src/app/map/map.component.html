@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="map.component.css">
+    <style>
+        /* body {
+            background-color: #f8f9fa;
+        } */
+        /* .form-group {
+            margin-bottom: 1rem;
+        } */
+        #map-container {
+            height: 300px; /* Set the height of the map container */
+            margin-top: 20px; /* Add margin for spacing */
+            border: 1px solid #ced4da; /* Add a border for visual separation */
+            border-radius: 5px; /* Add border radius for rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <label for="home-location-input">Home Location:</label>
+                <input [(ngModel)]="homeLocationInputValue" class="form-control" id="home-location-input" type="text" required>
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="work-location-input">Work Location:</label>
+                <input [(ngModel)]="workLocationInputValue" class="form-control" id="work-location-input" type="text" required>
+            </div>
+        </div>
+        <!-- <button class="btn btn-primary" (click)="showDirectionsOnMap()">Show Direction on Map</button> -->
+        <!-- Add a container for the map -->
+        <div id="map-container"></div>
+    </div>
+</body>
+</html>

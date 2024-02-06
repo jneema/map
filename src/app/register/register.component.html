@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.component.css">
+</head>
+<body>
+    <h2>Register</h2>
+
+    <form>
+        <div class="mb-3">
+            <label for="email">Email:</label>
+            <input class="form-control" type="email" name="email" id="email" [(ngModel)]="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password">Password:</label>
+            <div class="input-group">
+                <input class="form-control" type="{{ showPassword ? 'text' : 'password' }}" name="password" id="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" required>
+                <span class="input-group-text">
+                    <input type="checkbox" [(ngModel)]="showPassword" name="checkbox">
+                </span>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="confirmPassword">Confirm Password:</label>
+            <div class="input-group">
+                <input class="form-control" type="{{ showConfirmPassword ? 'text' : 'password' }}" name="confirmPassword" id="confirmPassword" [(ngModel)]="confirmPassword" [ngModelOptions]="{standalone: true}" required>
+                <span class="input-group-text">
+                    <input type="checkbox" [(ngModel)]="showConfirmPassword" name="checkbox">
+                </span>
+            </div>
+        </div>
+        <button class="btn btn-primary mb-3" (click)="register()">Register</button>
+    </form>
+</body>
+</html>

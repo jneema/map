@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    width: 400px; 
+    border: 1px solid #333; /* Dark border color */
+    padding: 20px; /* Add padding to create space between content and border */
+}
+
+button.btn-primary {
+    width: 100%;
+}
+.google-sign-in {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.google-sign-in .card {
+    background-color: #4285F4; /* Google Blue */
+    border: none;
+}
+
+.google-sign-in .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Text color for the card body (white) */
+}
