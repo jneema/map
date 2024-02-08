@@ -10,7 +10,7 @@ import { AuthService } from '../auth.service';
 export class LoginComponent {
   email : string = '';
   password : string = '';
-  showPassword: boolean = false; // Add this line to declare showPassword variable
+  showPassword: boolean = false; // declare showPassword variable
 
   constructor(private auth : AuthService) {  }
 

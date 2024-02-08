@@ -27,7 +27,7 @@ export class MapComponent implements OnInit {
 
       // Check if both locations are defined before showing direction
       if (this.homeLocation && this.workLocation) {
-        // Now, you can fill the inputs or update your form model accordingly
+        // zfill the inputs or update your form model accordingly
         this.fillInputs();
 
         // Show directions on the map

@@ -8,9 +8,9 @@ body {
 }
 
 form {
-    width: 400px; /* Adjust the width as needed */
-    border: 1px solid #333; /* Dark border color */
-    padding: 20px; /* Add padding to create space between content and border */
+    width: 400px; 
+    border: 1px solid #333; 
+    padding: 20px; 
 }
 
 button.btn-primary {
@@ -18,5 +18,5 @@ button.btn-primary {
 }
 
 button.btn-primary:hover {
-    background-color: #3c79c5; /* Darker Google Blue on hover */
+    background-color: #3c79c5; 
 }
